@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="lemon_tree"> lemon_tree </string>
+    <string name="lemon"> lemon </string>
+</resources>
