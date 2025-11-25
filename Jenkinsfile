@@ -17,7 +17,7 @@ pipeline {
 
         stage('Tests') {
             steps {
-                echo "🧪 Exécution des tests..."
+                echo "test auto" 
             }
         }
 
