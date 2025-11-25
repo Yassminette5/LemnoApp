@@ -25,6 +25,13 @@
         android:clickable="true"
         android:focusable="true"
         android:foreground="?attr/selectableItemBackgroundBorderless"
-        app:srcCompat="@drawable/lemon_tree"
-        />
+        app:srcCompat="@drawable/lemon_tree" />
+
+    <!-- Nouveau bouton pour tester le déclenchement du pipeline -->
+    <Button
+        android:id="@+id/btnTestPipeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tester pipeline" 
+        android:layout_marginTop="24dp" />
 </LinearLayout>

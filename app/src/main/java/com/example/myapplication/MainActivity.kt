@@ -2,7 +2,8 @@ package com.example.myapplication            // ✅ Le package de ton app (à ga
 
 import android.content.Intent                // ✅ Pour lancer une autre Activity
 import android.os.Bundle                     // ✅ État/arguments d'une Activity Android
-import android.widget.ImageView              // ✅ Accès au widget ImageView
+import android.widget.Button                // ✅ Accès au widget Button
+import android.widget.ImageView             // ✅ Accès au widget ImageView
 import androidx.activity.enableEdgeToEdge    // ✅ API Material pour gérer les bords (status/nav bars)
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -27,7 +28,14 @@ class MainActivity : AppCompatActivity() {   // ✅ Activity d'entrée (écran 1
         // ✅ 2) Quand on clique l’image → on ouvre la 2ᵉ page (SecondActivity)
         ivLemonTree.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java) // ✅ Prépare la "navigation" vers SecondActivity
-            startActivity(intent)                                  // ✅ Lance la 2ᵉ Activity
+            startActivity(intent)                                 // ✅ Lance la 2ᵉ Activity
+        }
+
+        // ✅ 3) Nouveau bouton pour tester le pipeline (simple log/placeholder)
+        val btnTestPipeline: Button = findViewById(R.id.btnTestPipeline)
+        btnTestPipeline.setOnClickListener {
+            // Ici tu peux plus tard ajouter une action spécifique si tu veux
+            // Pour l’instant, c’est juste une modification fonctionnelle pour ton commit
         }
     }
 }
