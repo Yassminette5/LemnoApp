@@ -18,7 +18,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo "🔧 Build en cours..."
+                echo "🔧 Build en cours."
             }
         }
 
